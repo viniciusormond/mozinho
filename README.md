@@ -44,11 +44,17 @@ Este projeto é uma aplicação web estática que pode ser hospedada em qualquer
 - Vercel
 - Coolify
 
-Para fazer o deploy no Coolify:
-1. Conecte este repositório como fonte
-2. Selecione a opção "Is it a static site?" durante a configuração
-3. Configure "/" como diretório base
-4. Clique em Deploy
+### Deploy no Coolify
+
+1. No painel do Coolify, clique em "Create New Resource"
+2. Selecione a opção de repositório Git e forneça a URL do seu repositório
+3. Na configuração de build:
+   - Selecione "Dockerfile" como método de build (o projeto já inclui um Dockerfile otimizado)
+   - Não é necessário definir comandos de build adicionais
+4. Configure seu domínio desejado
+5. Clique em Deploy
+
+O Dockerfile incluído no projeto já está configurado para servir corretamente os arquivos estáticos através do Nginx.
 
 ## Licença
 
