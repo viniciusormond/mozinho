@@ -4,20 +4,52 @@ Interface web simples e responsiva para visualizar mensagens extraídas de arqui
 
 ## Características
 
+- Visualização de mensagens organizadas por data
 - Interface responsiva com Tailwind CSS
 - Interatividade com Alpine.js
-- Visualização de mensagens organizadas por data
-- Filtragem por data e conteúdo
-- Design adaptado para mobile e desktop
+- Filtragem por data e conteúdo de mensagem
+- Links clicáveis para conteúdo compartilhado
 
 ## Estrutura do Projeto
 
-- `index.html`: Interface principal
-- `data/`: Arquivos de mensagens
-  - `message_X_final.txt`: Arquivos de mensagens extraídas
+```
+visualizador-mensagens/
+├── index.html     # Interface principal
+├── data/          # Arquivos de mensagens
+│   ├── message_1_final.txt
+│   ├── message_2_final.txt
+│   └── ...
+└── README.md      # Este arquivo
+```
 
-## Como usar
+## Tecnologias Utilizadas
+
+- **Alpine.js**: Framework JavaScript leve para interatividade
+- **Tailwind CSS**: Framework CSS utilitário para design responsivo
+- **DayJS**: Biblioteca para manipulação de datas
+
+## Como Usar
 
 1. Selecione um arquivo de mensagens no menu suspenso
-2. Use os filtros para encontrar mensagens específicas
-3. Navegue entre diferentes datas com a barra inferior
+2. Use o filtro de data para encontrar mensagens de um dia específico
+3. Use a busca de texto para encontrar mensagens com conteúdo específico
+4. Navegue entre as datas com a barra na parte inferior
+5. Visualize links e conteúdo compartilhado com formatação especial
+
+## Deploy
+
+Este projeto é uma aplicação web estática que pode ser hospedada em qualquer serviço de hospedagem, incluindo:
+- GitHub Pages
+- Netlify
+- Vercel
+- Coolify
+
+Para fazer o deploy no Coolify:
+1. Conecte este repositório como fonte
+2. Selecione a opção "Is it a static site?" durante a configuração
+3. Configure "/" como diretório base
+4. Clique em Deploy
+
+## Licença
+
+MIT
